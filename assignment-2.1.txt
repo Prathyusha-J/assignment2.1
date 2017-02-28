@@ -1,0 +1,198 @@
+                                  
+                                                   Hadoop Framework
+                                                        Assignment 2.1
+
+1.HardCode Sum of 2 integers:
+
+         import java.io.*;
+         class Acad
+         {
+           public static void main(String [] args)
+           {
+             Integer x,y,z;
+             x=3;
+             y=9;
+             z=x+y;
+             System.out.println("Sum is"+z); 
+            }
+          }
+
+
+2.Sum of 2 integers . I/P from user.
+
+         import java.io.*;
+        import java.util.*;         
+         class Acad
+         {
+           public static void main(String [] args)
+           {
+             Integer f,g,h;
+             Scanner sc=new Scanner(System.in);
+             f=sc.nextInt();            //get input from user
+             g=sc.nextInt();              //get input from user
+             h=f+g;
+             System.out.println("Sum is"+h); 
+            }
+          }
+
+
+
+3.Sum of 2 numbers using a method:
+
+              import java.util.Scanner;
+
+                 public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int c,d;
+		c=sc.nextInt();
+		d=sc.nextInt();
+		sum(c,d);         		//Calling method
+	}
+		public static void sum(int c,int d)
+		{
+			int f=c+d;
+                                    System.out.println("First number is:"+c);
+		System.out.println("Second number is:"+d);
+		System.out.println("Sum is"+f);
+		}
+
+	}
+
+
+                                    
+
+4)Even Odd Numbers between 2 given numbers
+
+        import java.util.Scanner;
+        public class Main {
+        public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int x,y;
+		x=sc.nextInt();
+		y=sc.nextInt();
+		System.out.println("Odd");
+		for(int i=x;i<y;i++)     /*Checking odd no.s*/
+		{
+			if(i%2!=0)
+			  System.out.println(i);
+		}
+		System.out.println("Even");
+		for(int i=x;i<y;i++)       /*Checking even no.*/
+		{
+			if(i%2==0)
+				System.out.println(i);
+			
+		}
+	}
+	}
+
+     
+
+5)First Ten Multiples Of a given number
+
+             import java.util.Scanner;
+             public class Main {
+             public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int num1,num2;
+	                  num1=sc.nextInt();
+		for(int i=1;i<=10;i++)
+		{
+			num2=num1*i;
+			System.out.println(num1+"*"+i+"="+num2);
+		}
+
+	}
+
+             }
+
+
+
+
+6)Method Overloading : sum()
+       import java.util.Scanner;
+
+        public class Main {
+	public static void main(String []args)
+	{
+		
+		Scanner sc=new Scanner(System.in);
+		int num1=sc.nextInt();
+		int num2=sc.nextInt();
+		int num3=sc.nextInt();
+				
+		sum(num1,num2);
+		sum(num1,num2,num3);
+	}
+		public static void sum(int a,int b)
+		{
+			int i=a+b;
+			System.out.println(i);
+			return;
+		}
+		public static void sum(int a,int b,int c)
+		{
+			int j=a+b+c;
+			System.out.println(j);
+			return ;
+		}
+	}
+
+
+7)Yes, we can overload a method with same return type  by 
+        Two methods with similar name and similar return type and with following specifications,
+              1.Having different number of parameters of  the same data type.
+              2.Having different number of parameters of the different type.
+              3. Having same number of parameters of different type.
+   
+        Corresponding program is an example provided,
+        
+         import java.util.Scanner;
+         public class Main {
+	public static void main(String []args)
+	{
+		
+		Scanner sc=new Scanner(System.in);
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		int z=sc.nextInt();
+				
+		int h=sum(x,y);
+		System.out.println("Sum of 2 integers is:  "+h);
+		int g=sum(x,y,z);
+		System.out.println("Sum of 3 integers is:  "+g);
+	}
+		public static int sum(int a,int b)//method withSame retun type int
+		{
+			int i=a+b;
+			
+			return i;
+		}
+		public static int sum(int a,int b,int c) //**Same return type int
+		{
+			int j=a+b+c;
+			
+			return j;
+		}
+	}
+
+
+8)progarm in java using Arrays that sorts the element in descending order.
+
+            import java.util.Arrays;
+            import java.util.Collections;
+
+            public class Main {
+	public static void main(String[] args)
+	{
+	Integer num[]={10,7,45,1,28};
+	Arrays.sort(num,Collections.reverseOrder());           /*use sort() and reverseOrder() methods
+	System.out.println(Arrays.toString(num));
+                   }}
+
+
+
+
+  
